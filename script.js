@@ -1,5 +1,11 @@
 // Assignment code here
 
+//Collect user inputs and store them in seperate variables
+var totalCharacters = Number(prompt("How many characters would you like your password to contain"));
+var uppercaseCharacters = confirm("Click OK to confirm including uppercase characters");
+var lowercaseCharacters = confirm("Click OK to confirm including lowercase characters");
+var numericCharacters = confirm("Click OK to confirm including numeric characters");
+var specialCharacters = confirm("Click OK to confirm including special characters.");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
