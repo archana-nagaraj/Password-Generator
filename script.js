@@ -2,8 +2,6 @@
 
 //Collect user inputs and store them in seperate variables
 var totalCharacters = Number(prompt("How many characters would you like your password to be. Choose a number between 8 and 128."));
-console.log(typeof totalCharacters);
-console.log(totalCharacters);
 while ((totalCharacters < 8 || totalCharacters > 128) || isNaN(totalCharacters))
 {
   totalCharacters = window.prompt("Please choose between 8 to 128 chars");
@@ -12,7 +10,8 @@ var uppercaseCharacters = confirm("Click OK to confirm including uppercase chara
 var lowercaseCharacters = confirm("Click OK to confirm including lowercase characters");
 var numericCharacters = confirm("Click OK to confirm including numeric characters");
 var specialCharacters = confirm("Click OK to confirm including special characters");
-if ((uppercaseCharacters && lowercaseCharacters && numericCharacters && specialCharacters) === false)
+
+while ((uppercaseCharacters === false )  && (lowercaseCharacters === false) && (numericCharacters ===false) && (specialCharacters=== false)) 
 {
   alert("At least one character type should be selected to generate the password. Please go through the options again!")
   uppercaseCharacters = confirm("Click OK to confirm including uppercase characters");
@@ -20,8 +19,6 @@ if ((uppercaseCharacters && lowercaseCharacters && numericCharacters && specialC
   numericCharacters = confirm("Click OK to confirm including numeric characters");
   specialCharacters = confirm("Click OK to confirm including special characters");
 }
-
-
 
 // function to generate password based on user inputs
 function generatePassword() {
