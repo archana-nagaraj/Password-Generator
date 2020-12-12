@@ -1,8 +1,10 @@
 // Assignment code here
 
 //Collect user inputs and store them in seperate variables
-var totalCharacters = Number(prompt("How many characters would you like your password to be. Chhose a number between 8 and 128."));
-if (totalCharacters < 8 || totalCharacters > 128)
+var totalCharacters = Number(prompt("How many characters would you like your password to be. Choose a number between 8 and 128."));
+console.log(typeof totalCharacters);
+console.log(totalCharacters);
+while ((totalCharacters < 8 || totalCharacters > 128) || isNaN(totalCharacters))
 {
   totalCharacters = window.prompt("Please choose between 8 to 128 chars");
 }
