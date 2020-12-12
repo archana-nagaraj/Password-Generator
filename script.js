@@ -1,11 +1,25 @@
 // Assignment code here
 
 //Collect user inputs and store them in seperate variables
-var totalCharacters = Number(prompt("How many characters would you like your password to contain"));
+var totalCharacters = Number(prompt("How many characters would you like your password to be. Chhose a number between 8 and 128."));
+if (totalCharacters < 8 || totalCharacters > 128)
+{
+  totalCharacters = window.prompt("Please choose between 8 to 128 chars");
+}
 var uppercaseCharacters = confirm("Click OK to confirm including uppercase characters");
 var lowercaseCharacters = confirm("Click OK to confirm including lowercase characters");
 var numericCharacters = confirm("Click OK to confirm including numeric characters");
-var specialCharacters = confirm("Click OK to confirm including special characters.");
+var specialCharacters = confirm("Click OK to confirm including special characters");
+if ((uppercaseCharacters && lowercaseCharacters && numericCharacters && specialCharacters) === false)
+{
+  alert("At least one character type should be selected to generate the password. Please go through the options again!")
+  uppercaseCharacters = confirm("Click OK to confirm including uppercase characters");
+  lowercaseCharacters = confirm("Click OK to confirm including lowercase characters");
+  numericCharacters = confirm("Click OK to confirm including numeric characters");
+  specialCharacters = confirm("Click OK to confirm including special characters");
+}
+
+
 
 // function to generate password based on user inputs
 function generatePassword() {
@@ -25,16 +39,16 @@ function generatePassword() {
   }
   // concatenating all the elements in the array
   charSetValues = charSetValues.join('');
-  var passwordgenarr = [];
+  var passwordgenTemp = [];
   for (var i=0; i < totalCharacters; i++){
-    passwordgenarr.push(charSetValues[Math.floor(Math.random() * charSetValues.length)]);
+    passwordgenTemp.push(charSetValues[Math.floor(Math.random() * charSetValues.length)]);
     // concatenating all the elements in the array
-    var passwordGen = passwordgenarr.join('');
+    passwordGen = passwordgenTemp.join('');
   }
   return passwordGen;
 }
 
-generatePassword();
+//generatePassword();
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
