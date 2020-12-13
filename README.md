@@ -22,5 +22,5 @@ https://archana-nagaraj.github.io/Password-Generator/
 [The OWASP® Foundation](https://owasp.org/www-community/password-special-characters)
 
 ### Contact
-Name: [Archana Nagaraja](https://archana-nagaraj.github.io/Professional-Portfolio/)
-Github: [Project Link](https://github.com/archana-nagaraj/Password-Generator)
+- Name: [Archana Nagaraja](https://archana-nagaraj.github.io/Professional-Portfolio/)
+- Github: [Project Link](https://github.com/archana-nagaraj/Password-Generator)
