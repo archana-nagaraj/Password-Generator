@@ -1,7 +1,6 @@
 # Password-Generator
 
-## Version 
-Version 1.0
+## Version 1.0
 
 ## Description:
 An application that an user can use to generate a random password based on criteria they’ve selected.
