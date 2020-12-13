@@ -1,5 +1,4 @@
-# Application Name: 
-## Password-Generator
+# Password-Generator
 
 ## Version 
 Version 1.0
@@ -29,4 +28,4 @@ https://github.com/archana-nagaraj/Password-Generator
 
 
 ## Contribution
-Developed by [Archana Nagaraja]
+Developed by [Archana Nagaraja] (https://archana-nagaraj.github.io/Professional-Portfolio/)
