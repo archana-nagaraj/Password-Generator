@@ -20,6 +20,7 @@ https://archana-nagaraj.github.io/Password-Generator/
 
 ### Resources:
 [The OWASP® Foundation](https://owasp.org/www-community/password-special-characters)
+
 [SourceCode](https://github.com/archana-nagaraj/Password-Generator)
 
 ### Contribution
